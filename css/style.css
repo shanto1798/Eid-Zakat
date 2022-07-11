@@ -1,59 +1,294 @@
+/* all common css start */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     outline: 0;
 }
-img{
-    vertical-align: middle;
-}
+
 a{
     text-decoration: none;
     display: inline-block;
 }
+
 ul, ol{
     list-style: none;
 }
+
+img{
+    vertical-align: middle;
+}
+
 .container{
-    max-width: 1170px;
+    max-width: 1034px;
     margin: 0 auto;
 }
-
-/* custom property start */
-:root {
-    --h1-font-size:30px;
-    --h2-font-size:25px;
-    --p-font-size:16px;
-    --p-color:red;
-}
-/* custom property end */
-
-/* all common css */
+/* all common css end */
 
 /* banner part start */
-
 #banner{
-    background-image: url(../images/zakat-banner-02.jpg);
+    background: url(../images/zakat_banner.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 200px 0;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+#banner::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 .banner_text{
     text-align: left;
-    width: 460px;
 }
 .banner_text h1{
-    font-size: var(--h1-font-size);
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    width: 526px;
 }
 .banner_text p{
-    font-size: var(--p-font-size);
-    color: var(--p-color);
-    padding: 20px 0;
+    color: white;
+    width: 480px;
+    font-size: 18px;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
 }
-.banner_text .btn a{
-    color: black;
-    background-color: wheat;
+.banner_btn a{
+    background-color: #EF233C;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500px;
     padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 /* banner part end */
+
+/* donate part start */
+#your_donate{
+    margin-bottom: 100px;
+}
+.donate_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.donate_text h2{
+    font-size: 45px;
+    font-weight: bold;
+    width: 492px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.donate_text p{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 0;
+    width: 480px;
+    font-weight: 600px;
+}
+/* donate part end */
+
+/* suvive part start */
+
+#suvive{
+    margin-bottom: 100px;
+}
+.suvive_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.suvive_text h2{
+    font-size: 45px;
+    font-weight: bold;
+    width: 333px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.suvive_text p{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 0;
+    width: 480px;
+    font-weight: 600px;
+}
+/* suvive part end */
+
+/* icon part start */
+
+#icon{
+    margin-bottom: 100px;
+}
+.icon_head_text{
+    text-align: center;
+}
+.icon_head_text h2{
+    font-size: 45px;
+    width: 492px;  
+    margin: 0 auto;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.icon_head_text p{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 0;
+    width: 664px;
+    font-weight: 600px;
+    margin: 0 auto;
+}
+.inner_icon_flex{
+    width: 461px;
+    height: 225px;
+    background-color: #FEF4F5;
+    position: relative;
+}
+.inner_icon_flex img{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.inner_icon_flex h3{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.inner_icon_flex p{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    width: 293px;
+    font-size: 18px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.icon_flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+/* icon part end */
+
+/* item img part start */
+
+#item{
+    margin-bottom: 100px ;
+}
+.item_flex {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin-left: -60px;
+}
+
+/* item img part end */
+
+/* zakat item part start */
+
+#zakat{
+    margin-bottom: 100px;
+}
+.zakat_head_text{
+    text-align: center;
+}
+.zakat_head_text h2{
+    width: 877px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 45px;
+    margin: 0 auto;
+}
+.zakat_head_text p{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 0;
+    width: 664px;
+    font-weight: 600px;
+    margin: 0 auto;
+
+}
+
+.zakat_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zakat_item {
+    width: 364px;
+    height: 481px;
+    background-color: antiquewhite;
+    margin-top: 30px;
+    
+}
+.one{
+    margin-left: 100px;
+}
+.three{
+    margin-right: 100px;
+}
+.zakat_item h3{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.zakat_item p{
+    width: 308px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.zakat_item a{
+    color: #EF233C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500px;
+    margin-left: 30px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+/* zakat item part end */
+
+/* footer part start */
+footer{
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+footer h3{
+    text-align: center;
+    color: #EF233C;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 0;
+}
+footer p{
+    text-align: center;
+    font-size: 18px;
+    color: #FEF4F5;
+    font-family: 'Poppins', sans-serif;
+}
+/* footer part end */
+
